@@ -1,20 +1,43 @@
-//  defualt 
-// inverted
-// google.sign.in
+// //  defualt 
+// // inverted
+// // google.sign.in
 
 import './button.style.scss';
+// const BUTTON_TYPE_CLASSES = {
+//     google: 'google-sign-in',
+//     inverted: 'inverted',
+// };
+
+// const Button = ({children, buttonType, ...otherProps}) => {
+//     return (
+//         <button className={'button-container ${BUTTON_TYPE_CLASSES[buttonType]}'}
+//         {...otherProps} >
+//             {children}
+//         </button>
+//     );
+// };
+
+// export default Button;  
+
+
+
+
+
+
+
 const BUTTON_TYPE_CLASSES = {
-    google: 'google-sign-in',
-    inverted: 'inverted',
+  google: "google-sign-in",
+  inverted: "inverted",
 };
 
-const Button = ({children, buttonType, ...otherProps}) => {
-    return (
-        <button className={'button-container ${BUTTON_TYPE_CLASSES.base[buttonType]}'}
-        {...otherProps} >
-            {children}
-        </button>
-    );
+const Button = ({ children, buttonType, ...otherProps }) => {
+  return (
+    <button
+      className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}
+      {...otherProps}
+    >
+      {children}
+    </button>
+  );
 };
-
-export default Button;  
+export default Button;
